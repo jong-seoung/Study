@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1>함수</h1>
+<h2>기초</h2>
+<ul>
+  <script>
+    function two(){
+      document.write('<li>2-1</li>')
+      document.write('<li>2-2</li>')
+    }
+    document.write('<li>1</li>')
+    two();
+    document.write('<li>3</li>')
+    two();
+
+  </script>
+</ul>
+<h2>매개변수 and 인자</h2>
+<script>
+function oneplusone(){
+  document.write(1+1+'<br>');
+}
+function sum(left,right){
+  document.write(left+right+'<br>');
+}
+oneplusone();
+sum(2,3);
+function sumcolorred(left,right){
+  document.write('<div style="color:red">'+left+right+'</div><br>');
+}
+sumcolorred(2,4);
+
+</script>
+<h2>리턴</h2>
+
+<script>
+
+  function sum2(left,right){
+    return left+right;
+  }
+  document.write(sum2(2,3)+'<br>');
+  document.write('<div style="color:red">'+sum2(2,3)+'</div><br>');
+  document.write('<div style="font-size:3rem">'+sum2(2,3)+'</div><br>');
+
+</script>
+
+    <br>
+      <a href="3.html">돌아가기</a>
+  </body>
+</html>

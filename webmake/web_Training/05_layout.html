@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout05</title>
+    <style>
+        * {margin: 0; padding: 0;} /* 실무에서는 잘 사용하지 않음 */
+        #wrap {width: 100%; font-size: 40px; color: #fff; text-align: center; text-transform: uppercase;}
+        #header_wrap {width: 100%; background-color: #4cc051;}
+        #banner_wrap {width: 100%; background-color: #53cc59;}
+        #content_wrap {width: 100%; background-color: #27c92f;}
+        #footer_wrap {width: 100%; background-color: #2e7d32;}
+
+        .header_container {width: 1000px; margin: 0 auto; height: 100px; line-height: 100px; background-color: #6d4c41;}
+        .banner_container {width: 1000px; margin: 0 auto; height: 300px; line-height: 100px; background-color: #5d4037;}
+        .content_container {width: 1000px; margin: 0 auto; height: 500px; line-height: 100px; background-color: #4e342e;}
+        .footer_container {width: 1000px; margin: 0 auto; height: 100px; line-height: 100px; background-color: #3e2723;}
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <div id="header_wrap">
+            <dir class="header_container">header</dir>
+        </div>
+        <div id="banner_wrap">
+            <div class="banner_container">banner</div>
+        </div>
+        <div id="content_wrap">
+            <div class="content_container">content</div>
+        </div>
+        <div id="footer_wrap">
+            <div class="footer_container">footer</div>
+        </div>
+    </div>
+</body>
+</html>

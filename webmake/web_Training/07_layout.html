@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout07</title>
+    <style>
+        /* 리셋 */
+        * {margin: 0; padding: 0;} /* 실무에서는 잘 사용하지 않음 */
+
+        /*전체 레이아웃*/
+        #wrap {font-size: 30px; color: #fff; text-align: center; text-transform: uppercase;}
+        #header_wrap {height: 100%;}
+        #banner_wrap {height: 100%; background-color: #fbd6e3;}
+        #content_wrap {height: 100%;}
+        #footer_wrap {height: 100%; background-color: #d6ebfd;}
+
+
+        /* 레이아웃 */
+        #header_top {width: 100%; margin: 0 auto; height: 70px; background: #333;}
+        #header_nav {width: 100%; margin: 0 auto; height: 70px; background: #444;}
+        #content_1  {width: 100%; margin: 0 auto; height: 90px; background: #55e5;}
+        #content_2  {width: 100%; margin: 0 auto; height: 480px; background: #d54;}
+        #content_3  {width: 100%; margin: 0 auto; height: 380px; background: #99e9;}
+        #footer_top {width: 100%; margin: 0 auto; height: 60px; background: #9e9;}
+        
+        /* 컨테이너 */
+        .container {width: 1100px; margin: 0 auto; height:inherit; background: rgb(155, 74, 74, 0.7);}
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <div id="header_wrap">
+            <dir id="header_top">
+                <div class="container">header_top</div>
+            </dir>
+            <dir id="header_nav">
+                <div class="container">header_nav</div>
+            </dir>
+        </div>
+        <!-- header -->
+        
+        <div id="banner_wrap">
+            <div class="container">banner</div>
+        </div>
+        <!-- banner -->
+        
+        <div id="content_wrap">
+            <div id="content_1">
+                <div class="container">content1</div>
+            </div>
+            <div id="content_2">
+                <div class="container">content2</div>
+            </div>
+            <div id="content_3">
+                <div class="container">content3</div>
+            </div>
+        </div>
+        <!-- content -->
+
+        <div id="footer_wrap">
+            <div id="footer_top">
+                <div class="container">footer</div>
+            </div>
+        </div>
+        <!-- footer -->
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout06</title>
+    <style>
+        * {margin: 0; padding: 0;} /* 실무에서는 잘 사용하지 않음 */
+        #wrap {font-size: 40px; color: #fff; text-align: center; text-transform: uppercase;}
+        #header_wrap {height: 140px; line-height: 140px; background-color: #ffe1e4;}
+        #banner_wrap {height: 450px; line-height: 450px; background-color: #fbd6e3;}
+        #content_wrap {height: 950px; line-height: 950px; background-color: #ead5ee;}
+        #footer_wrap {height: 220px; line-height: 220px; background-color: #d6ebfd;}
+
+        .container {width: 1100px; margin: 0 auto; height: inherit; background-color: rgba(0,0,0,0.3);}
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <div id="header_wrap">
+            <dir class="container">header</dir>
+        </div>
+        <div id="banner_wrap">
+            <div class="container">banner</div>
+        </div>
+        <div id="content_wrap">
+            <div class="container">content</div>
+        </div>
+        <div id="footer_wrap">
+            <div class="container">footer</div>
+        </div>
+    </div>
+</body>
+</html>

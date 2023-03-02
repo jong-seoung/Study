@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>객체</h1>
+    <h2>Create</h2>
+    <script>
+
+      var friend = {
+
+        "programmer":"egoing",
+        "disigner":"leezche"
+
+      };
+      document.write("programmer : " +friend.programmer + "<br>");
+      document.write("disigner : " +friend.disigner + "<br>");
+      friend.bookkeeper="duru";
+      document.write("bookkeeper : " + friend.bookkeeper + "<br>");
+      friend["data scientist"]="taeho";
+      document.write("data scientist : " + friend["data scientist"] + "<br>");
+
+    </script>
+
+    <h2>Iterate</h2>
+
+    <script>
+
+      for(var key in friend){
+
+        document.write(key+':' + friend[key]+'<br>');
+
+      }
+
+    </script>
+
+    <h2>property & Method</h2>
+
+    <script>
+
+      friend.showAll = function() {
+        for(var key in this){
+          document.write(key+':' + this[key]+'<br>');
+        }
+      }
+friend.showAll();
+    </script>
+    </body>
+  <br>
+  <a href="3.html">돌아가기</a>
+</html>
