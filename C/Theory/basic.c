@@ -6,10 +6,10 @@ void main() {
 	age = 13;
 	printf("%d\n", age);
 
-	/* ÁÖ¼® Ã³¸®1 */
-	//ÁÖ¼® Ã³¸®2
+	/* ì£¼ì„ ì²˜ë¦¬1 */
+	//ì£¼ì„ ì²˜ë¦¬2
 
-	// ½Ç¼öÇü º¯¼ö¿¡ ´ëÇÑ ¿¹Á¦
+	// ì‹¤ìˆ˜í˜• ë³€ìˆ˜ì— ëŒ€í•œ ì˜ˆì œ
 	float f = 46.5f;
 	printf("%f\n",f);
 	printf("%.2f\n", f);
@@ -17,35 +17,35 @@ void main() {
 	double d = 4.428;
 	printf("%.2f\n", d);
 
-	// »ó¼ö - º¯ÇÏÁö ¾Ê´Â ¼ö (const¸¦ »ç¿ë)
+	// ìƒìˆ˜ - ë³€í•˜ì§€ ì•ŠëŠ” ìˆ˜ (constë¥¼ ì‚¬ìš©)
 	const int YEAR = 2000;
-	printf("ÅÂ¾î³­ ³âµµ : %d\n", YEAR);
-	// YEAR = 2001; ·Î ¹Ù²Ü¼ö¾øÀ½
+	printf("íƒœì–´ë‚œ ë…„ë„ : %d\n", YEAR);
+	// YEAR = 2001; ë¡œ ë°”ê¿€ìˆ˜ì—†ìŒ
 
 	// printf
-	// ¿¬»ê
+	// ì—°ì‚°
 	int add = 3 + 7; // 10
 	printf("3 + 7 = %d\n", add);
 	printf("%d + %d = %d\n", 3, 7, 3 + 7);
 
 	// scanf
-	// Å°º¸µå ÀÔ·ÂÀ» ¹Ş¾Æ¼­ ÀúÀå
+	// í‚¤ë³´ë“œ ì…ë ¥ì„ ë°›ì•„ì„œ ì €ì¥
 	int input;
-	printf("°ªÀ» ÀÔ·ÂÇÏ¼¼¿ä :");
+	printf("ê°’ì„ ì…ë ¥í•˜ì„¸ìš” :");
 	scanf_s("%d", &input);
-	printf("ÀÔ·Â°ªÀº %d\n", input);
+	printf("ì…ë ¥ê°’ì€ %d\n", input);
 
 	int one, two, three;
-	printf("3°³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+	printf("3ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 	scanf_s("%d %d %d", &one, &two, &three);
-	printf("3°³ÀÇ Á¤¼ö´Â : %d %d %d \n", one, two, three);
+	printf("3ê°œì˜ ì •ìˆ˜ëŠ” : %d %d %d \n", one, two, three);
 
-	// ¹®ÀÚ - ÇÑ±ÛÀú, ¹®ÀÚ¿­ - ÇÑ±ÛÀÚ ÀÌ»óÀÇ ¿©·¯±ÛÀÚ
+	// ë¬¸ì - í•œê¸€ì €, ë¬¸ìì—´ - í•œê¸€ì ì´ìƒì˜ ì—¬ëŸ¬ê¸€ì
 	char c = 'A';
 	printf("%c\n", c);
-
+	
 	char str[256];
-	scanf("%s", str, sizeof(str));
+	scanf_s("%s", str, sizeof(str));
 	printf("%s\n", str);
 	return 0;
 }

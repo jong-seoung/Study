@@ -1,7 +1,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/c,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=c,visualstud/io
 
-/Theory/Theory.*
+C/
 
 ### C ###
 # Prerequisites
